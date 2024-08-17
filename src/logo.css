@@ -1,0 +1,9 @@
+img{
+    height:55px;
+    width:180px;
+    /* display:block; */
+    /* margin-top: 15px;
+    margin-left: -30px; */
+    float:inline-start;
+    
+}

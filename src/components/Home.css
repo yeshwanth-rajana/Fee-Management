@@ -1,0 +1,10 @@
+.image{
+    background-image: url('https://gmrit.edu.in/images/blocks/Landing.png');
+    position: absolute;
+    height: 100%;
+    width:100%;
+}
+h1{
+    font-weight: bolder;
+    
+}
