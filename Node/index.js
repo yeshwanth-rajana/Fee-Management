@@ -11,7 +11,7 @@ let connection=mysql.createConnection(
         host:'localhost',
         user:'root',
         password:'',
-        database:'yesh'
+        database:'fee'
     })
     connection.connect((err)=>{
         if(!err){ 
@@ -93,8 +93,8 @@ app.get('/Adminpage/:id',(req,res)=>
         }
     })})
     app.post('/Formupdation/:id',(req,res)=>
-    {console.log(req.body.username)
-        connection.query('update `signup` set username="'+req.body.username+'",email="'+req.body.email+'",totalfee="'+req.body.totalfee+'",discount="'+req.body.discount+'", balance="'+req.body.balance+'",duedate="'+req.body.duedate+'" where id="'+req.params.id+'"',(err,rows,fileds)=>
+    {console.log(req.params.id)
+        connection.query('update `signup` set username="'+req.body.username+'",email="'+req.body.email+'",totalfee="'+req.body.totalfee+'",discount="'+req.body.discount+'", balance="'+req.body.balance+'",duedate="'+req.body.duedate+'" where id="'+req.params.id+'"',(err,rows,fields)=>
         {
             if(!err)
             {

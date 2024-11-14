@@ -19,7 +19,7 @@ export default function Signup(){
     
     setData(res.data)
     console.log(res.data)
-    username="";
+    
    })
    alert('registration sucessfull')
 

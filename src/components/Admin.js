@@ -48,7 +48,7 @@ export default function Adminpage(){
               <td>{item.clearedfee}</td>
               <td>
                 <button type="button" className="btn btn-outline-warning">
-                  <Link to={`/Formupdation/:id`}>Edit</Link>
+                  <Link to={`/Formupdation/${item.id}`}>Edit</Link>
                 </button>
               </td>
             </tr>
